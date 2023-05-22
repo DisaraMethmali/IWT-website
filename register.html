@@ -1,0 +1,77 @@
+
+<!DOCTYPEhtml>
+    <html>
+
+    <head>
+        <link rel="stylesheet" href="stylesnew.css">
+        <link rel="stylesheet" href="formstyle.css">
+        <script src="js/newsnew.js"></script>
+        <title>My Shopping cart</title>
+    </head>
+
+    <body>
+        <img class="logo" src="images.png" width="200px" height="200px" alt="image.png"><br>
+        <h1>
+            Shopping Cart
+        </h1>
+        <br>
+        <h3 id="header">The online shopping store</h6>
+        <hr id="test"/>
+        
+        <ul class="menu">
+            <li class="menu"><a href="htmlnew.html"><u>Home</u></a></li>
+            <li class="menu"><a href="newsnew.html"><u>News</u></a></li>
+            <li class="menu"><a href="register.html"><u>Contact</u></a></li>
+            <li class="menu"><a href="about.php"><u>About</u></a></li>
+        </ul>
+        <center>
+            <h2>Register Form</h2>
+            <form action="submitRegistration.php" method="POST" onsubmit="return checkPassword()">
+
+                First Name:<br/>
+                <input type="text"  name="firstname" placeholder="First Name" required><br/><br/>
+
+                Last Name:<br/>
+                <input type="text"  name="lastname" placeholder="Last Name" required><br/><br/>
+
+                Gender:<br/>
+                <input type="radio"value="Male" name="gender">Male
+                <input type="radio" value="Female" name="gender">Female<br/><br/>
+
+                Mobile Number:<br/>
+                <input type="phone" name="mobile" placeholder="0777777777" pattern="[0-9]{10}" required>
+                <br/><br/>
+
+                e-mail:<br/>
+                <input type="email" name="email" placeholder="abc@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                required><br/><br/>
+
+                Address:<br/>
+                <textarea name="Address" rows="8" cols="50" required>
+                </textarea><br/><br/>
+
+                Birthday:<br/>
+                <input type="date" name="day" required><br/><br/>
+
+                Password:<br/>
+                <input type="password" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,10}"
+                required><br/><br/>
+
+                Re-enter Password:<br/>
+                <input type="password" id="cnfrpwd" required><br/><br/>
+
+                <br>
+                <input type="checkbox" id="checkbox" class="input style" onclick="enableButton()">Accept Privacy Policy and Terms
+                <br/><br/>
+
+                <center>
+                    <input type="submit" value="submit" id="submitBtn" disabled>
+                </center>
+            </form>
+        </center>
+        <hr id="test"/>
+            <center>
+                <h3 style="font-weight: bold; font-style: italic;">Created By : <a href="https://courseweb.sliit.lk/"> Disara Methmali </a></h3>
+            </center>
+        </footer>
+    </body>
